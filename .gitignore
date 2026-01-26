@@ -1,0 +1,14 @@
+# Compiled bytecode
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
