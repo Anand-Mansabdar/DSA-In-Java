@@ -35,5 +35,11 @@ public class BuiltInMethods {
 
     // 10. compareToIgnoreCase() - same as above just ignore the case of strings (uppercase / lowercase doesnt matter)
     System.out.println(name.compareToIgnoreCase(str));
+
+    // 11. concat() - to add two strings
+    String a = "Hello, ";
+    String b = "Good Morning!!";
+    a = a.concat(b);
+    System.out.println(a);
   }
 }
