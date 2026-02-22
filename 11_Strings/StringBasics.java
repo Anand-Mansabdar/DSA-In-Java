@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class StringBasics {
+  @SuppressWarnings("resource")
   public static void main(String[] args) {
     // Creating a char[] array
     char[] arr = {'a', 'n', 'a', 'n', 'd'};
