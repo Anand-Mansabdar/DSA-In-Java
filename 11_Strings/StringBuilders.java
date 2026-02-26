@@ -24,9 +24,11 @@ public class StringBuilders {
     StringBuilder s = new StringBuilder("Anand");
     System.out.println(s.length()+" "+s.capacity());
     System.out.println(s);
-    s.append(" Mansabdar");
+    s.append(" Mansabdarababab");
+    // s.append("a");
+    // System.out.println(s.length()+" "+s.capacity());
     System.out.println(s);
-    System.out.println(s.capacity());
+    System.out.println(s.length()+" "+s.capacity());
     s.setCharAt(0, 'a');
     System.out.println(s);
     
@@ -38,7 +40,10 @@ public class StringBuilders {
     System.out.println(s.length()+" "+s.capacity());
     s.append("a");
     System.out.println(s.length()+" "+s.capacity());
-
+    s.append("hucbwuqybvwiecnjiac.jndhcsdbvuiweviqwvqw");
+    s.append("hucbwuqybvwiecnjiac.jndhcsdbvuiweviqwvqw");
+    s.append("hucbwuqybvwiecnjiac.jndhcsdbvuiweviqwvqw");
+    System.out.println(s.length()+" "+s.capacity());
     System.out.println(s.reverse());
 
     System.out.println(s);
