@@ -54,10 +54,35 @@ public class MostFrequentCharacter {
     System.out.println(maxFreq);
     return ans;
   }
+
+  public static char bestApproach(String s){
+    s = s.toLowerCase();
+    int n = s.length();
+    int[] freq = new int[26];
+
+    for(int i=0; i<n; i++){
+      char ch = s.charAt(i);
+      int idx = ch-'a';
+      freq[idx]++;
+    }
+    int maxFreq = 0;
+    char ans = s.charAt(0);
+    for(int i=0; i<26; i++){
+      if(freq[i] > maxFreq){
+        maxFreq=freq[i];
+        ans = (char)(i+97);
+      }
+    }
+    System.out.println(maxFreq);
+    return ans;
+  }
+
   public static void main(String[] args) {
-    String s = "Anand Mansabdar";
+    String s = "AnandMansabdar";
     System.out.println(freqCharacter(s));
 
     System.out.println(optimizedApproach(s));
+
+    System.out.println(bestApproach(s));
   }
 }
