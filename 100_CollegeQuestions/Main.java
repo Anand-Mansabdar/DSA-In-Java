@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class Main {
+  @SuppressWarnings("resource")
   
   public static void main(String[] args) {
     double pie=3.14;
